@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Selectors and Pseudo Selectors</title>
+  <style>
+    input[type="submit"] + .child-box{
+      background-color: blue;
+    }
+    .child-box{
+      width:50px;
+      height:50px;
+    }
+    input{
+      border:1px solid yellow;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box">
+    <input type="password">
+    <input type="submit" class="submit">
+    <div class="child-box"></div>
+  </div>
+</body>
+</html>
